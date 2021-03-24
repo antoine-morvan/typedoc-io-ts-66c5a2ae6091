@@ -1,0 +1,9 @@
+node_modules/
+coverage/
+.vscode/
+.git/
+.nvs/
+.env
+docs/
+*.log
+*.orig

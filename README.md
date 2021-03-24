@@ -1,6 +1,6 @@
 # typedoc-io-ts
 
-Sample project to reproduce IO-TS type alias issue when generating doc with typedoc.
+Sample project to reproduce IO-TS type alias issue when generating doc with typedoc. (see https://github.com/TypeStrong/typedoc/issues/1550)
 
 ## Steps:
 

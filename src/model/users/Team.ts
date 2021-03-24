@@ -10,10 +10,7 @@ const TeamUsersType = t.type({
 
 export const TeamType = t.intersection([TeamIdentifierType, TeamUsersType]);
 
-export const TeamSpecifierType = t.intersection([
-  TeamIdentifierType,
-  t.partial(TeamUsersType.props)
-]);
+export const TeamSpecifierType = t.intersection([TeamIdentifierType, t.partial(TeamUsersType.props)]);
 
 export type Team = t.TypeOf<typeof TeamType>;
 

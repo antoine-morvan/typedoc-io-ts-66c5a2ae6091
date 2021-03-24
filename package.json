@@ -6,7 +6,7 @@
     "npm": ">=6.0.0 <7.0.0"
   },
   "scripts": {
-    "doc": "typedoc --out target/docs src/client src/model"
+    "doc": "typedoc --out ./docs src/client src/model"
   },
   "dependencies": {
     "fp-ts": "^2.9.5",

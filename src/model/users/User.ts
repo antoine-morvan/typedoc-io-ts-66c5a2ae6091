@@ -10,7 +10,9 @@ const UserTeamsType = t.type({
 
 export const UserType = t.intersection([UserIdentifierType, UserTeamsType]);
 
-export type UserIoTs = t.TypeOf<typeof UserType>;
+// see https://github.com/TypeStrong/typedoc/issues/1550
+// eslint-disable-next-line @typescript-eslint/ban-types
+export type UserIoTs = {} & t.TypeOf<typeof UserType>;
 
 export type UserManual = {
   userId: string;

@@ -12,6 +12,10 @@ export const TeamType = t.intersection([TeamIdentifierType, TeamUsersType]);
 
 export const TeamSpecifierType = t.intersection([TeamIdentifierType, t.partial(TeamUsersType.props)]);
 
-export type Team = t.TypeOf<typeof TeamType>;
+// see https://github.com/TypeStrong/typedoc/issues/1550
+// eslint-disable-next-line @typescript-eslint/ban-types
+export type Team = {} & t.TypeOf<typeof TeamType>;
 
-export type TeamSpecifier = t.TypeOf<typeof TeamSpecifierType>;
+// see https://github.com/TypeStrong/typedoc/issues/1550
+// eslint-disable-next-line @typescript-eslint/ban-types
+export type TeamSpecifier = {} & t.TypeOf<typeof TeamSpecifierType>;
